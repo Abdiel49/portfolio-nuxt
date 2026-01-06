@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Static HTML Export with Nuxt
         run: npm run generate
+      - name: Add .nojekyll to bypass Jekyll processing
+        run: touch .output/public/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

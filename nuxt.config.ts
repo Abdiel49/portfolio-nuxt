@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   // App Configuration
   app: {
     // Assuming the repository name is 'portfolio-abdiel'. Change this if deploying to a custom domain or different repo.
-    baseURL: '/', 
+    baseURL: '/portfolio-nuxt/',
     head: {
       title: 'Abdiel Orellana - Senior Frontend Engineer',
       meta: [
