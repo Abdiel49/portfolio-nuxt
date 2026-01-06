@@ -10,10 +10,10 @@
         <a href="mailto:abdielorellana3@gmail.com" class="p-3 bg-white/5 rounded-full hover:bg-brand hover:text-white transition-all">
           <Icon name="heroicons:envelope" class="w-6 h-6" />
         </a>
-        <a href="www.github.com/abdiel49" target="_blank" class="p-3 bg-white/5 rounded-full hover:bg-brand hover:text-white transition-all">
+        <a href="https://github.com/abdiel49" target="_blank" class="p-3 bg-white/5 rounded-full hover:bg-brand hover:text-white transition-all">
           <Icon name="mdi:github" class="w-6 h-6" />
         </a>
-        <a href="www.linkedin.com/in/abdiel-orellana" target="_blank" class="p-3 bg-white/5 rounded-full hover:bg-brand hover:text-white transition-all">
+        <a href="https://www.linkedin.com/in/abdiel-orellana" target="_blank" class="p-3 bg-white/5 rounded-full hover:bg-brand hover:text-white transition-all">
           <Icon name="mdi:linkedin" class="w-6 h-6" />
         </a>
       </div>
