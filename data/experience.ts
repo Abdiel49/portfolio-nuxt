@@ -1,86 +1,66 @@
 import type { Experience } from '~/types';
 
-/**
- * whootrip
- * manymore
- * daypass
- * DocDoc
- * ToqueApp
- * raquets
- * enjoy loyalty
- * grupo del sol, solipuntos
- * virbac
- * Sib cochabamba - web - mobil
- * conduce ya
- * Digall
- * hanheld
- * 
- * 
- * Eventos App
- * 
- */
-
 export const experiences: Experience[] = [
   {
     id: 'tangram',
     role: 'Mobile Developer Lead',
     company: 'Tangram Consulting',
-    period: 'Sep 2024 - Present', // Placeholder dates
+    period: 'Sep 2024 - Dec 2025',
     description: [
-      'Focused on building responsive and performant mobile interfaces.',
-      'Collaborated with cross-functional teams to deliver high-quality mobile products.',
-      'Integrated RESTful APIs and implemented complex UI designs.'
+      'Designed and implemented app architecture and native solutions for iOS and Android across multiple projects.',
+      'Integrated critical functionalities such as online payments and Google Cloud Platform (GCP) services, including Maps API and Analytics.',
+      'Provided technical leadership by resolving complex issues and guiding the team to optimize workflows and accelerate development.',
+      'Managed the full development lifecycle, ensuring quality through automated testing up to successful app store deployment.'
     ],
-    techBadges: ['React Native', 'Expo', 'UI/UX', 'iOS', 'Android', 'iPadOS', 'GCP', ]
+    techBadges: ['React Native', 'Expo', 'iOS', 'Android', 'GCP', 'Automated Testing', 'TypeScript']
   },
   {
     id: 'freelance',
-    role: 'Full Stack Developer',
-    company: 'Freelance - Self employed',
-    period: 'Sep 2021 - Sep 2024', // Placeholder dates
+    role: 'Full Stack Software Developer',
+    company: 'Freelance',
+    period: 'Sep 2021 - Sep 2024',
     description: [
-      'Developed end-to-end solutions using the MERN stack and React Native.',
-      'Implemented backend services with NestJS and managed database interactions.',
-      'Optimized application performance and streamlined deployment pipelines.'
+      'Led end-to-end projects, translating requirements into React Native applications (with offline modules) and Angular dashboards.',
+      'Developed scalable backends using NestJS/NodeJS with REST and GraphQL APIs, integrating payment gateways and Redis.',
+      'Managed advanced cloud infrastructure using AWS (EC2, S3) and persistence services on GCP.',
+      'Oversaw the successful deployment of applications to the official Apple and Google app stores.'
     ],
-    techBadges: ['React Native', 'React', 'Angular', 'Online Payments', 'NestJS', 'NodeJS', 'GCP', 'AWS', 'Postgres', 'MySql', 'GraphQL', 'Redis', 'Docker']
+    techBadges: ['React Native', 'NestJS', 'GraphQL', 'AWS', 'Angular', 'PostgreSQL', 'Redis', 'GraphQL', 'Offline Modules', 'Docker', 'PouchDB', 'CouchDB', 'Firestore']
   },
   {
     id: 'racquets',
-    role: 'Full Stack Developer',
+    role: 'Full Stack Software Engineer',
     company: 'Racquets AppSuite LLC',
-    period: 'Jan 2024 - Dec 2025', // Placeholder dates
+    period: 'Jan 2024 - Aug 2025',
     description: [
-      'Developed end-to-end solutions using the MERN stack and React Native.',
-      'Implemented backend services with NestJS and managed database interactions.',
-      'Optimized application performance and streamlined deployment pipelines.'
+      'Directed the development and maintenance of React Native applications, covering everything from project planning to core interface design.',
+      'Implemented online payment systems and localization support for 11 languages.',
+      'Built robust backends with NodeJS and Firestore, creating scalable architectures based on Google services.'
     ],
-    techBadges: ['React Native', 'NestJS', 'Node.js', 'MongoDB', 'Full Stack']
+    techBadges: ['React Native', 'NodeJS', 'Firestore', 'Localization', 'GCP', 'Online payments']
   },
   {
     id: 'tugerente',
-    role: 'Mobile Team Lead',
+    role: 'Full Stack Software Developer',
     company: 'tuGerente',
-    period: 'Aug 2022 - Feb 2023', // Placeholder dates
+    period: 'Aug 2022 - Feb 2023',
     description: [
-      'Led the mobile development team, establishing coding standards and best practices.',
-      'Managed cloud infrastructure on AWS and GCP, ensuring high availability and scalability.',
-      'Architected and implemented robust React Native applications for business management.',
-      'Mentored junior developers and conducted code reviews to maintain code quality.'
+      'Led the mobile team, overseeing the development and deployment of iOS and Android applications.',
+      'Collaborated closely on backend design strategy and maintained development standards for timely delivery.',
+      'Managed hybrid infrastructure using Amazon S3/EC2 for storage and compute, along with GCP Firestore.'
     ],
-    techBadges: ['React Native', 'AWS', 'GCP', 'Identify', 'Team Leadership']
+    techBadges: ['Mobile Leadership', 'React Native', 'AWS', 'Project Strategy', 'Android', 'iOS', 'Offline Modules', 'Firestore', 'NodeJS', 'Docker', 'PostgreSQL', 'Redis', 'PouchDB', 'CouchDB']
   },
   {
-    id: 'cannedHead',
-    role: 'Frontend Developer',
-    company: 'cannedHead',
-    period: 'Nov 2021 - Feb 2022', // Placeholder dates
+    id: 'cannedhead',
+    role: 'Front End Developer',
+    company: 'Canned Head',
+    period: 'Nov 2021 - Feb 2022',
     description: [
-      'Led the mobile development team, establishing coding standards and best practices.',
-      'Managed cloud infrastructure on AWS and GCP, ensuring high availability and scalability.',
-      'Architected and implemented robust React Native applications for business management.',
-      'Mentored junior developers and conducted code reviews to maintain code quality.'
+      'Specialized in React frontend development, translating UI designs into pixel-perfect and responsive web apps.',
+      'Seamlessly integrated interface components with backend APIs through cross-functional collaboration.',
+      'Focused on clear technical documentation to improve long-term code maintainability and reference.'
     ],
-    techBadges: ['React', 'SASS', 'LESS']
-  },
+    techBadges: ['React', 'UI/UX', 'Responsive Design', 'API Integration', 'Documentation']
+  }
 ];
