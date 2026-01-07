@@ -29,7 +29,7 @@
               <!-- Header Image -->
               <div class="relative h-64 md:h-80 w-full">
                 <img :src="project.imgUrl" class="w-full h-full object-cover" />
-                <button @click="closeModal" class="absolute top-4 right-4 p-2 bg-black/50 rounded-full text-white hover:bg-brand transition-colors">
+                <button @click="closeModal" class="absolute top-4 right-4 p-2 bg-black/50 rounded-full text-white hover:bg-brand transition-colors flex justify-center items-center">
                   <Icon name="heroicons:x-mark" class="w-6 h-6" />
                 </button>
               </div>
