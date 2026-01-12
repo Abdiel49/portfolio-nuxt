@@ -130,7 +130,15 @@ export const projects: Project[] = [
     title: "Virbac Club",
     description: "Specialized pet nutrition loyalty program for pet owners in Costa Rica.",
     longDescription: "A platform dedicated to rewarding the loyalty of Virbac's HPM food line consumers. Users accumulate 'paw prints' (points) with each purchase, which can be redeemed for nutrition products for their pets, encouraging care and repeat purchases.",
-    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Virbac Club',
+    imgUrl: '/images/projects/virbac/d.png',
+    gallery: [
+      "/images/projects/virbac/main.png",
+      "/images/projects/virbac/detail.png",
+      "/images/projects/virbac/modal.png",
+      "/images/projects/virbac/points.png",
+      "/images/projects/virbac/news.png",
+      "/images/projects/virbac/news-detail.png",
+    ],
     tags: ["React Native", "Pets", "Loyalty"],
     techStack: ["React Native", "Socket.io", "Stripe", "AdobeDX", "Firebase", "One Signal"],
     links: {
@@ -179,17 +187,17 @@ export const projects: Project[] = [
     links: {},
     skillsShown: ["Role-Based Access Control", "Inventory Systems", "Clean Architecture"]
   },
-  {
-    id: "hanheld",
-    title: "Hanheld",
-    description: "Omnichannel marketing hub for mass communication across multiple social platforms.",
-    longDescription: "An advanced digital marketing platform that centralizes messaging through WhatsApp, Facebook, Instagram, Twitter, Telegram, LinkedIn, Email, and SMS. It allows companies to manage their omnichannel communication from a single interface.",
-    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Hanheld',
-    tags: ["React Native", "Marketing", "Omnichannel"],
-    techStack: ["React", "Webhooks", "Firebase"],
-    links: {},
-    skillsShown: ["Omnichannel Integration", "Clean Architecture", "Real-time Updates"]
-  },
+  // {
+  //   id: "hanheld",
+  //   title: "Hanheld",
+  //   description: "Omnichannel marketing hub for mass communication across multiple social platforms.",
+  //   longDescription: "An advanced digital marketing platform that centralizes messaging through WhatsApp, Facebook, Instagram, Twitter, Telegram, LinkedIn, Email, and SMS. It allows companies to manage their omnichannel communication from a single interface.",
+  //   imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Hanheld',
+  //   tags: ["React Native", "Marketing", "Omnichannel"],
+  //   techStack: ["React", "Webhooks", "Firebase"],
+  //   links: {},
+  //   skillsShown: ["Omnichannel Integration", "Clean Architecture", "Real-time Updates"]
+  // },
   {
     id: "eventos-app",
     title: "Eventos App",
