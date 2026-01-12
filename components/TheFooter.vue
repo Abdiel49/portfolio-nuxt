@@ -19,7 +19,7 @@
       </div>
 
       <p class="text-xs text-dark-muted">
-        © {{ new Date().getFullYear() }} Abdiel Orellana. Built with Nuxt 3 & Tailwind.
+        © {{ new Date().getFullYear() }} Abdiel Orellana.
       </p>
     </div>
   </footer>

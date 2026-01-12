@@ -39,7 +39,6 @@
 <script setup lang="ts">
 const technologies = [
   { name: 'React Native', icon: 'logos:react', color: '' },
-  { name: 'Expo', icon: 'logos:expo', color: '' },
   { name: 'React', icon: 'logos:react', color: '' },
   { name: 'NestJS', icon: 'logos:nestjs', color: '' },
   { name: 'AWS', icon: 'logos:aws', color: '' },
