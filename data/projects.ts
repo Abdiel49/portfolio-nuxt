@@ -66,10 +66,20 @@ export const projects: Project[] = [
     title: "Racquets App",
     description: "Comprehensive ecosystem for managing racquet sports, tournaments, and professional training.",
     longDescription: "A complete application for the racquetball, pickleball, and padel community. It allows clubs to manage facilities and staff, while players can organize tournaments, participate in skill-level challenges, and access courses taught by qualified coaches.",
-    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Racquets App',
+    imgUrl: '/images/projects/racquets/p.png',
     tags: ["React Native", "Expo", "Sports", "Management"],
-    techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
-    links: {},
+    techStack: ["React Native", "NodeJS", "Stripe", "Figma", "Firebase"],
+    gallery: [
+      "/images/projects/racquets/menu.jpg",
+      "/images/projects/racquets/dashboard.jpg",
+      "/images/projects/racquets/class-detail.jpg",
+      "/images/projects/racquets/availavility.jpg",
+    ],
+    links: {
+      liveDemo: "https://racquetsappsuite.com/",
+      playStore: "https://play.google.com/store/apps/details?id=com.terracomsortium.tapps",
+      appStore: "https://apps.apple.com/us/app/racquetsappsuite/id1592585843"
+    },
     skillsShown: ["Clean Architecture", "Complex Scheduling", "Real-time Updates", "Payment Gateway Integration"]
   },
   {
@@ -79,12 +89,12 @@ export const projects: Project[] = [
     longDescription: "A loyalty program that allows users to earn points for purchases at affiliated merchants to be used as a payment method. It includes a tier system (Silver, Gold, Platinum) based on annual spending, granting exclusive benefits according to the member's status.",
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Enjoy Loyalty',
     tags: ["React Native", "Loyalty", "E-commerce"],
-    techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Firebase"],
+    techStack: ["React Native", "Socket.io", "Stripe", "Firebase", "One Signal"],
     links: {
       appStore: "https://apps.apple.com/cr/app/enjoy-loyalty/id1550607553",
       playStore: "https://play.google.com/store/apps/details?id=com.nwideas.enjoygrouployalty"
     },
-    skillsShown: ["Clean Architecture", "Reward Systems", "Push Notifications"]
+    skillsShown: ["Clean Architecture", "Reward Systems", "Push Notifications", "Payment Gateway Integration"]
   },
   {
     id: "puntos-del-sol",
@@ -93,12 +103,12 @@ export const projects: Project[] = [
     longDescription: "A loyalty platform designed for Grupo del Sol, where customers earn points for their consumption at associated merchants and can redeem them for a wide variety of prizes within the same commercial network.",
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Puntos del Sol',
     tags: ["React Native", "Points System", "Retail"],
-    techStack: ["React Native", "Socket.io", "Stripe", "Firebase"],
+    techStack: ["React Native", "Socket.io", "Stripe", "Firebase", "One Signal", "AdobeXD"],
     links: {
       appStore: "https://apps.apple.com/gt/app/puntos-del-sol/id6450683279",
       playStore: "https://play.google.com/store/apps/details?id=com.nwideas.grupodelsol"
     },
-    skillsShown: ["Clean Architecture", "Real-time Updates", "Push Notifications"]
+    skillsShown: ["Clean Architecture", "Real-time Updates", "Push Notifications", "Payment Gateway Integration"]
   },
   {
     id: "virbac-club",
@@ -107,7 +117,7 @@ export const projects: Project[] = [
     longDescription: "A platform dedicated to rewarding the loyalty of Virbac's HPM food line consumers. Users accumulate 'paw prints' (points) with each purchase, which can be redeemed for nutrition products for their pets, encouraging care and repeat purchases.",
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Virbac Club',
     tags: ["React Native", "Pets", "Loyalty"],
-    techStack: ["React Native", "Socket.io", "Stripe", "AdobeDX", "Firebase"],
+    techStack: ["React Native", "Socket.io", "Stripe", "AdobeDX", "Firebase", "One Signal"],
     links: {
       liveDemo: "https://es.virbac.com/",
       appStore: "https://apps.apple.com/cr/app/virbac-club/id6667118314",
@@ -120,12 +130,16 @@ export const projects: Project[] = [
     title: "Sib Cochabamba",
     description: "Digital guide for promotions and services from businesses associated with SIB Cochabamba.",
     longDescription: "Interactive directory (Web and Mobile) to view offers from associated merchants. It allows searches by category or location, showing detailed information such as hours, current promotions, and direct access to the establishments' social media.",
-    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Sib Cochabamba',
+    imgUrl: "/images/projects/sib/sib-p.png",
     tags: ["React Native", "Directory", "Local Business"],
-    techStack: ["React Native", "Figma", "Firebase"],
+    techStack: ["React Native", "Figma", "Firebase", "NestJS", "PostgreSQL", "Dokcer"],
     links: {
       playStore: "https://play.google.com/store/apps/details?id=com.cochabamba.sib"
     },
+    gallery: [
+      "/images/projects/sib/sib-1.png",
+      "/images/projects/sib/sib-2.png",
+    ],
     skillsShown: ["Clean Architecture", "Push Notifications", "Search & Filters"]
   },
   {
@@ -135,7 +149,7 @@ export const projects: Project[] = [
     longDescription: "An educational app focused on traffic regulations using gamification techniques similar to Duolingo. It allows users to take driving exam simulations, earn achievements, and gain virtual coins to exchange for hints, all functioning without an internet connection.",
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Conduce Ya',
     tags: ["React Native", "Gamification", "EdTech", "Offline"],
-    techStack: ["React Native", "Expo", "Firebase", "Figma"],
+    techStack: ["React Native",  "Figma", "PouchDB", "WatermelonDB"],
     links: {},
     skillsShown: ["Gamification Logic", "Offline-First", "Clean Architecture"]
   },
@@ -146,7 +160,7 @@ export const projects: Project[] = [
     longDescription: "An enterprise application for managing construction distribution centers. It includes modules for employee management with hierarchical permissions, customer tracking, order monitoring, real-time inventory, invoicing, and analytical report generation.",
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Digall',
     tags: ["React Native", "ERP", "Logistics", "Business"],
-    techStack: ["React Native", "Expo", "Socket.io", "Firebase"],
+    techStack: ["React Native", "Expo", "FCM", "Firebase"],
     links: {},
     skillsShown: ["Role-Based Access Control", "Inventory Systems", "Clean Architecture"]
   },
@@ -157,7 +171,7 @@ export const projects: Project[] = [
     longDescription: "An advanced digital marketing platform that centralizes messaging through WhatsApp, Facebook, Instagram, Twitter, Telegram, LinkedIn, Email, and SMS. It allows companies to manage their omnichannel communication from a single interface.",
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Hanheld',
     tags: ["React Native", "Marketing", "Omnichannel"],
-    techStack: ["React Native", "Expo", "Socket.io", "Webhooks", "Firebase"],
+    techStack: ["React", "Webhooks", "Firebase"],
     links: {},
     skillsShown: ["Omnichannel Integration", "Clean Architecture", "Real-time Updates"]
   },
