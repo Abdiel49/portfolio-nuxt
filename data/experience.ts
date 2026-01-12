@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
     id: 'racquets',
     role: 'Full Stack Software Engineer',
     company: 'Racquets AppSuite LLC',
-    period: 'Jan 2024 - Aug 2025',
+    period: 'Jan 2024 - Dec 2025',
     description: [
       'Directed the development and maintenance of React Native applications, covering everything from project planning to core interface design.',
       'Implemented online payment systems and localization support for 11 languages.',
