@@ -6,7 +6,7 @@
     <!-- Image -->
     <div class="aspect-video w-full overflow-hidden">
       <img 
-        :src="project.imgUrl" 
+        :src="getAssetPath(project.imgUrl)" 
         :alt="project.title" 
         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
@@ -39,4 +39,7 @@ defineProps<{
 }>();
 
 defineEmits(['click'])
+
+const { getAssetPath } = useAssetPath();
 </script>
+

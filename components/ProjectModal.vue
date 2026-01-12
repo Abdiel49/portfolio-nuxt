@@ -28,7 +28,7 @@
               
               <!-- Header Image -->
               <div class="relative h-64 md:h-80 w-full">
-                <img :src="project.imgUrl" class="w-full h-full object-cover" />
+                <img :src="getAssetPath(project.imgUrl)" class="w-full h-full object-cover" />
                 <button @click="closeModal" class="absolute top-4 right-4 p-2 bg-black/50 rounded-full text-white hover:bg-brand transition-colors flex justify-center items-center">
                   <Icon name="heroicons:x-mark" class="w-6 h-6" />
                 </button>
@@ -74,7 +74,7 @@
                         <img 
                           v-for="(img, idx) in project.gallery" 
                           :key="idx" 
-                          :src="img" 
+                          :src="getAssetPath(img)" 
                           @click="openGalleryModal(idx)"
                           class="rounded-lg object-contain w-full h-48 border border-white/5 hover:border-brand/50 transition-colors cursor-pointer" 
                         />
@@ -152,7 +152,7 @@
               <div class="max-w-7xl max-h-[90vh] px-20">
                 <img 
                   v-if="project && project.gallery"
-                  :src="project.gallery[currentImageIndex]" 
+                  :src="getAssetPath(project.gallery[currentImageIndex])" 
                   class="max-w-full max-h-[90vh] object-contain rounded-lg"
                   alt="Gallery image"
                 />
@@ -195,6 +195,9 @@ const { selectedProject: project, isModalOpen: isOpen } = storeToRefs(store);
 // Gallery modal state
 const isGalleryOpen = ref(false);
 const currentImageIndex = ref(0);
+
+// Asset path helper
+const { getAssetPath } = useAssetPath();
 
 const closeModal = () => {
   store.closeProjectModal();
