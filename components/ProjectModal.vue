@@ -134,7 +134,7 @@
               <!-- Close Button -->
               <button 
                 @click="closeGalleryModal" 
-                class="absolute top-4 right-4 p-3 bg-black/50 rounded-full text-white hover:bg-brand transition-colors z-10"
+                class="absolute top-4 right-4 p-2 bg-black/50 rounded-full text-white hover:bg-brand transition-colors z-10"
               >
                 <Icon name="heroicons:x-mark" class="w-6 h-6" />
               </button>

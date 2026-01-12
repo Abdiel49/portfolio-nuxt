@@ -87,7 +87,15 @@ export const projects: Project[] = [
     title: "Enjoy Loyalty",
     description: "Customer loyalty system based on point accumulation and membership tiers.",
     longDescription: "A loyalty program that allows users to earn points for purchases at affiliated merchants to be used as a payment method. It includes a tier system (Silver, Gold, Platinum) based on annual spending, granting exclusive benefits according to the member's status.",
-    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Enjoy Loyalty',
+    imgUrl: '/images/projects/loyalty/d.png',
+    gallery: [
+      "/images/projects/loyalty/main.png",
+      "/images/projects/loyalty/menu.png",
+      "/images/projects/loyalty/detail.png",
+      "/images/projects/loyalty/detail-2.png",
+      "/images/projects/loyalty/detail-22.png",
+      "/images/projects/loyalty/filter.png",
+    ],
     tags: ["React Native", "Loyalty", "E-commerce"],
     techStack: ["React Native", "Socket.io", "Stripe", "Firebase", "One Signal"],
     links: {
