@@ -12,7 +12,6 @@ export const usePortfolioStore = defineStore('portfolio', {
       this.isModalOpen = true;
     },
     closeProjectModal() {
-      this.selectedProject = null;
       this.isModalOpen = false;
     }
   }
