@@ -109,7 +109,14 @@ export const projects: Project[] = [
     title: "Puntos del Sol",
     description: "Rewards app for the network of businesses associated with Grupo del Sol.",
     longDescription: "A loyalty platform designed for Grupo del Sol, where customers earn points for their consumption at associated merchants and can redeem them for a wide variety of prizes within the same commercial network.",
-    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Puntos del Sol',
+    imgUrl: '/images/projects/solipuntos/d.png',
+    gallery: [
+      "/images/projects/solipuntos/dashboard.png",
+      "/images/projects/solipuntos/detail.png",
+      "/images/projects/solipuntos/profile.png",
+      "/images/projects/solipuntos/qr.png",
+      "/images/projects/solipuntos/reguards.png",
+    ],
     tags: ["React Native", "Points System", "Retail"],
     techStack: ["React Native", "Socket.io", "Stripe", "Firebase", "One Signal", "AdobeXD"],
     links: {
