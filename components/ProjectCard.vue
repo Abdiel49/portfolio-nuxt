@@ -33,6 +33,7 @@
 
 <script setup lang="ts">
 import type { Project } from '../types';
+import { useAssetPath } from '../composables/useAssetPath';
 
 defineProps<{
   project: Project

@@ -11,6 +11,17 @@
         <a v-for="item in navItems" :key="item.name" :href="item.href" class="text-sm font-medium text-dark-muted hover:text-brand transition-colors">
           {{ item.name }}
         </a>
+        
+        <!-- CV Button -->
+        <a 
+          :href="CV_URL" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 px-4 py-2 bg-brand hover:bg-brand-dark text-white text-sm font-semibold rounded-lg transition-all shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"
+        >
+          <Icon name="heroicons:document-arrow-down" class="w-4 h-4" />
+          <span>CV</span>
+        </a>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -39,6 +50,18 @@
            >
             {{ item.name }}
           </a>
+          
+          <!-- CV Button Mobile -->
+          <a 
+            :href="CV_URL" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            @click="isMenuOpen = false"
+            class="flex items-center justify-center gap-2 px-4 py-3 bg-brand hover:bg-brand-dark text-white text-base font-semibold rounded-lg transition-all shadow-[0_0_15px_rgba(59,130,246,0.2)]"
+          >
+            <Icon name="heroicons:document-arrow-down" class="w-5 h-5" />
+            <span>Download CV</span>
+          </a>
         </div>
       </div>
     </transition>
@@ -47,8 +70,10 @@
 
 <script setup lang="ts">
   import { ref } from "vue";
+  import { EXTERNAL_LINKS } from '../constants';
   
   const isMenuOpen = ref<boolean>(false);
+  const CV_URL = EXTERNAL_LINKS.CV_URL;
 
   const navItems = [
     { name: 'Home', href: '#home' },
