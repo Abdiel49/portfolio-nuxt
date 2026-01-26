@@ -1,66 +1,68 @@
 import type { Project } from '~/types';
 
 export const projects: Project[] = [
-  // {
-  //   id: "whootrip",
-  //   title: "WhoopTrip",
-  //   description: "Adventure tour booking platform with integrated payments and itinerary management.",
-  //   longDescription: "WhooTrip is a mobile application designed for booking tours in natural parks, offering activities such as hiking and rafting. The platform integrates Mercado Pago for payments, allows itinerary planning through a personalized agenda, and features a robust administration panel. It also includes real-time individual and group chats to coordinate tours.",
-  //   imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=WhoopTrip',
-  //   tags: ["React Native", "Expo", "Socket.io", "Stripe", "Mobile"],
-  //   techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
-  //   links: {},
-  //   gallery: [
-  //     "/images/projects/whootrip/main.png",
-  //     "/images/projects/whootrip/detalle-actividad.png",
-  //     "/images/projects/whootrip/chats.png",
-  //   ],
-  //   skillsShown: ["Clean Architecture", "Real-time Updates", "Payment Gateway Integration", "Push Notifications"]
-  // },
-  // {
-  //   id: "manymore",
-  //   title: "ManyMore",
-  //   description: "Group buying marketplace with progressive discounts and an offer management dashboard.",
-  //   longDescription: "An e-commerce platform where users access products with special discounts through allied merchants. The system uses a volume-based buying model: the more units purchased, the higher the discount applied. It includes an administrative panel to manage the offer catalog and purchase requests.",
-  //   imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=ManyMore',
-  //   tags: ["React Native", "Expo", "Socket.io", "Webhooks"],
-  //   techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
-  //   links: {},
-  //   skillsShown: ["Clean Architecture", "Real-time Updates", "Payment Gateway Integration", "Push Notifications"]
-  // },
-  // {
-  //   id: "daypass",
-  //   title: "Daypass",
-  //   description: "Travel booking app featuring custom filters and price optimization based on selected services.",
-  //   longDescription: "An application for searching and booking accommodations (hotels, houses, or apartments) in tourist destinations. It stands out for its high level of customization, allowing users to filter specific services to adjust the final price according to their actual needs.",
-  //   imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Daypass',
-  //   tags: ["React Native", "Expo", "Stripe", "Mobile"],
-  //   techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
-  //   links: {},
-  //   skillsShown: ["Clean Architecture", "Custom Filtering", "Payment Gateway Integration", "Push Notifications"]
-  // },
-  // {
-  //   id: "docdoc",
-  //   title: "DocDoc",
-  //   description: "Offline-first medical management application for hospital environments.",
-  //   longDescription: "A healthcare technology solution that enables hospitals to manage medical and pharmaceutical materials. The app operates under an offline-first scheme to ensure information access in any hospital area, allowing for theoretical material tracking and inventory management by administrators.",
-  //   imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=DocDoc',
-  //   tags: ["React Native", "Expo", "Offline-First", "HealthTech"],
-  //   techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
-  //   links: {},
-  //   skillsShown: ["Offline-First Architecture", "Clean Architecture", "Push Notifications", "Inventory Management"]
-  // },
-  // {
-  //   id: "toqueapp",
-  //   title: "ToqueApp",
-  //   description: "Dating app based on common interests and geolocation for real-time connections.",
-  //   longDescription: "ToqueApp is a social networking and dating platform that connects people with similar interests. It uses geolocation services to identify nearby users and enables chat features once there is a mutual predisposition (match) to meet.",
-  //   imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=ToqueApp',
-  //   tags: ["React Native", "Expo", "Geolocation", "Social"],
-  //   techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
-  //   links: {},
-  //   skillsShown: ["Clean Architecture", "Real-time Updates", "Geolocation Services", "Push Notifications"]
-  // },
+  /**
+  {
+    id: "whootrip",
+    title: "WhoopTrip",
+    description: "Adventure tour booking platform with integrated payments and itinerary management.",
+    longDescription: "WhooTrip is a mobile application designed for booking tours in natural parks, offering activities such as hiking and rafting. The platform integrates Mercado Pago for payments, allows itinerary planning through a personalized agenda, and features a robust administration panel. It also includes real-time individual and group chats to coordinate tours.",
+    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=WhoopTrip',
+    tags: ["React Native", "Expo", "Socket.io", "Stripe", "Mobile"],
+    techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
+    links: {},
+    gallery: [
+      "/images/projects/whootrip/main.png",
+      "/images/projects/whootrip/detalle-actividad.png",
+      "/images/projects/whootrip/chats.png",
+    ],
+    skillsShown: ["Clean Architecture", "Real-time Updates", "Payment Gateway Integration", "Push Notifications"]
+  },
+  {
+    id: "manymore",
+    title: "ManyMore",
+    description: "Group buying marketplace with progressive discounts and an offer management dashboard.",
+    longDescription: "An e-commerce platform where users access products with special discounts through allied merchants. The system uses a volume-based buying model: the more units purchased, the higher the discount applied. It includes an administrative panel to manage the offer catalog and purchase requests.",
+    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=ManyMore',
+    tags: ["React Native", "Expo", "Socket.io", "Webhooks"],
+    techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
+    links: {},
+    skillsShown: ["Clean Architecture", "Real-time Updates", "Payment Gateway Integration", "Push Notifications"]
+  },
+  {
+    id: "daypass",
+    title: "Daypass",
+    description: "Travel booking app featuring custom filters and price optimization based on selected services.",
+    longDescription: "An application for searching and booking accommodations (hotels, houses, or apartments) in tourist destinations. It stands out for its high level of customization, allowing users to filter specific services to adjust the final price according to their actual needs.",
+    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Daypass',
+    tags: ["React Native", "Expo", "Stripe", "Mobile"],
+    techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
+    links: {},
+    skillsShown: ["Clean Architecture", "Custom Filtering", "Payment Gateway Integration", "Push Notifications"]
+  },
+  {
+    id: "docdoc",
+    title: "DocDoc",
+    description: "Offline-first medical management application for hospital environments.",
+    longDescription: "A healthcare technology solution that enables hospitals to manage medical and pharmaceutical materials. The app operates under an offline-first scheme to ensure information access in any hospital area, allowing for theoretical material tracking and inventory management by administrators.",
+    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=DocDoc',
+    tags: ["React Native", "Expo", "Offline-First", "HealthTech"],
+    techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
+    links: {},
+    skillsShown: ["Offline-First Architecture", "Clean Architecture", "Push Notifications", "Inventory Management"]
+  },
+  {
+    id: "toqueapp",
+    title: "ToqueApp",
+    description: "Dating app based on common interests and geolocation for real-time connections.",
+    longDescription: "ToqueApp is a social networking and dating platform that connects people with similar interests. It uses geolocation services to identify nearby users and enables chat features once there is a mutual predisposition (match) to meet.",
+    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=ToqueApp',
+    tags: ["React Native", "Expo", "Geolocation", "Social"],
+    techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
+    links: {},
+    skillsShown: ["Clean Architecture", "Real-time Updates", "Geolocation Services", "Push Notifications"]
+  },
+   */
   {
     id: "racquets-app",
     title: "Racquets App",
