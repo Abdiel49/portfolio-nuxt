@@ -27,9 +27,19 @@
         </div>
       </div>
 
-      <div class="mt-12 animate-slide-up opacity-0" style="animation-fill-mode: forwards; animation-delay: 1s;">
+      <div class="mt-12 flex flex-wrap justify-center gap-4 animate-slide-up opacity-0" style="animation-fill-mode: forwards; animation-delay: 1s;">
         <a href="#projects" class="px-8 py-4 bg-brand hover:bg-brand-dark text-white font-semibold rounded-lg transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]">
           View Work
+        </a>
+        
+        <a 
+          :href="CV_URL" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-brand text-brand hover:bg-brand hover:text-white font-semibold rounded-lg transition-all"
+        >
+          <Icon name="heroicons:document-arrow-down" class="w-5 h-5" />
+          <span>Download CV</span>
         </a>
       </div>
     </div>
@@ -37,6 +47,10 @@
 </template>
 
 <script setup lang="ts">
+import { EXTERNAL_LINKS } from '../constants';
+
+const CV_URL = EXTERNAL_LINKS.CV_URL;
+
 const technologies = [
   { name: 'React Native', icon: 'logos:react', color: '' },
   { name: 'React', icon: 'logos:react', color: '' },
