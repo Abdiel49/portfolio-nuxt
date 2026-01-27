@@ -20,7 +20,7 @@
         Specializing in building robust, scalable applications with React Native, Expo, and Modern Web Methodologies.
       </p>
 
-      <div class="flex flex-wrap justify-center gap-4 animate-slide-up opacity-0" style="animation-fill-mode: forwards; animation-delay: 0.8s;">
+      <div class="flex flex-wrap justify-center gap-4 mx-24 animate-slide-up opacity-0" style="animation-fill-mode: forwards; animation-delay: 0.8s;">
         <div v-for="tech in technologies" :key="tech.name" class="flex items-center space-x-2 px-4 py-2 bg-dark-surface rounded-lg border border-white/5 hover:border-brand/50 transition-colors">
           <Icon :name="tech.icon" class="w-6 h-6" :class="tech.color" />
           <span class="font-medium">{{ tech.name }}</span>
@@ -53,8 +53,14 @@ const CV_URL = EXTERNAL_LINKS.CV_URL;
 
 const technologies = [
   { name: 'React Native', icon: 'logos:react', color: '' },
+  { name: 'Expo', icon: 'logos:expo-icon', color: '' },
   { name: 'React', icon: 'logos:react', color: '' },
+  { name: 'Next.js', icon: 'logos:nextjs-icon', color: '' },
+  { name: 'Vue', icon: 'logos:vue', color: '' },
   { name: 'NestJS', icon: 'logos:nestjs', color: '' },
+  { name: 'Python', icon: 'logos:python', color: '' },
+  { name: 'Docker', icon: 'logos:docker-icon', color: '' },
+  { name: 'Github Actions', icon: 'logos:github-actions', color: '' },
   { name: 'AWS', icon: 'logos:aws', color: '' },
   { name: 'GCP', icon: 'logos:google-cloud', color: '' },
 ];
