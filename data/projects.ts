@@ -1,7 +1,6 @@
 import type { Project } from '~/types';
 
 export const projects: Project[] = [
-  /**
   {
     id: "whootrip",
     title: "WhoopTrip",
@@ -12,7 +11,7 @@ export const projects: Project[] = [
     techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
     links: {},
     gallery: [
-      "/images/projects/whootrip/main.png",
+      "/images/projects/whootrip/main.webp",
       "/images/projects/whootrip/detalle-actividad.png",
       "/images/projects/whootrip/chats.png",
     ],
@@ -25,6 +24,11 @@ export const projects: Project[] = [
     longDescription: "An e-commerce platform where users access products with special discounts through allied merchants. The system uses a volume-based buying model: the more units purchased, the higher the discount applied. It includes an administrative panel to manage the offer catalog and purchase requests.",
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=ManyMore',
     tags: ["React Native", "Expo", "Socket.io", "Webhooks"],
+    gallery: [
+      "/images/projects/manymore/manymore-detail-category.png",
+      "/images/projects/manymore/manymore-detail-offer.png",
+      "/images/projects/manymore/manymore-employes.png",
+    ],
     techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
     links: {},
     skillsShown: ["Clean Architecture", "Real-time Updates", "Payment Gateway Integration", "Push Notifications"]
@@ -37,20 +41,25 @@ export const projects: Project[] = [
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=Daypass',
     tags: ["React Native", "Expo", "Stripe", "Mobile"],
     techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
+    gallery: [
+      "/images/projects/daypass/daypass-detail.png",
+      "/images/projects/daypass/daypass-list.png",
+      "/images/projects/daypass/daypass-mapa.png",
+    ],
     links: {},
     skillsShown: ["Clean Architecture", "Custom Filtering", "Payment Gateway Integration", "Push Notifications"]
   },
-  {
-    id: "docdoc",
-    title: "DocDoc",
-    description: "Offline-first medical management application for hospital environments.",
-    longDescription: "A healthcare technology solution that enables hospitals to manage medical and pharmaceutical materials. The app operates under an offline-first scheme to ensure information access in any hospital area, allowing for theoretical material tracking and inventory management by administrators.",
-    imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=DocDoc',
-    tags: ["React Native", "Expo", "Offline-First", "HealthTech"],
-    techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
-    links: {},
-    skillsShown: ["Offline-First Architecture", "Clean Architecture", "Push Notifications", "Inventory Management"]
-  },
+  // {
+  //   id: "docdoc",
+  //   title: "DocDoc",
+  //   description: "Offline-first medical management application for hospital environments.",
+  //   longDescription: "A healthcare technology solution that enables hospitals to manage medical and pharmaceutical materials. The app operates under an offline-first scheme to ensure information access in any hospital area, allowing for theoretical material tracking and inventory management by administrators.",
+  //   imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=DocDoc',
+  //   tags: ["React Native", "Expo", "Offline-First", "HealthTech"],
+  //   techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
+  //   links: {},
+  //   skillsShown: ["Offline-First Architecture", "Clean Architecture", "Push Notifications", "Inventory Management"]
+  // },
   {
     id: "toqueapp",
     title: "ToqueApp",
@@ -59,10 +68,17 @@ export const projects: Project[] = [
     imgUrl: 'https://placehold.co/600x400/1e293b/3b82f6?text=ToqueApp',
     tags: ["React Native", "Expo", "Geolocation", "Social"],
     techStack: ["React Native", "Expo", "Socket.io", "Stripe", "Figma", "Firebase"],
-    links: {},
+    gallery: [
+      "/images/projects/toque/toque-chat-detail.png",
+      "/images/projects/toque/toque-near-me.png",
+      "/images/projects/toque/toque-perfil.png",
+    ],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.tangram.toque",
+      appStore: "https://apps.apple.com/es/app/toque-conoce-por-cercan%C3%ADa/id6737775881"
+    },
     skillsShown: ["Clean Architecture", "Real-time Updates", "Geolocation Services", "Push Notifications"]
   },
-   */
   {
     id: "racquets-app",
     title: "Racquets App",

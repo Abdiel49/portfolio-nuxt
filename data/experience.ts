@@ -2,30 +2,38 @@ import type { Experience } from '~/types';
 
 export const experiences: Experience[] = [
   {
-    id: 'tangram',
-    role: 'Mobile Developer Lead',
-    company: 'Tangram Consulting',
-    period: 'Sep 2024 - Dec 2025',
-    description: [
-      'Designed and implemented app architecture and native solutions for iOS and Android across multiple projects.',
-      'Integrated critical functionalities such as online payments and Google Cloud Platform (GCP) services, including Maps API and Analytics.',
-      'Provided technical leadership by resolving complex issues and guiding the team to optimize workflows and accelerate development.',
-      'Managed the full development lifecycle, ensuring quality through automated testing up to successful app store deployment.'
-    ],
-    techBadges: ['React Native', 'Expo', 'iOS', 'Android', 'GCP', 'Automated Testing', 'TypeScript']
-  },
-  {
     id: 'freelance',
     role: 'Full Stack Software Developer',
     company: 'Freelance',
-    period: 'Sep 2021 - Sep 2024',
+    period: 'Sep 2021 - Feb 2026',
     description: [
-      'Led end-to-end projects, translating requirements into React Native applications (with offline modules) and Angular dashboards.',
-      'Developed scalable backends using NestJS/NodeJS with REST and GraphQL APIs, integrating payment gateways and Redis.',
-      'Managed advanced cloud infrastructure using AWS (EC2, S3) and persistence services on GCP.',
-      'Oversaw the successful deployment of applications to the official Apple and Google app stores.'
+      "Delivered end-to-end full stack solutions, translating client requirements into production-ready mobile, web, and backend systems.",
+      "Developed React Native applications with offline-first capabilities and Angular-based administrative dashboards.",
+      "Built scalable backend services using Node.js, NestJS, and Express, exposing REST APIs and integrating SQL and NoSQL databases.",
+      "Designed and implemented advanced CI/CD pipelines using GitHub Actions to automate testing, linting, secure database migrations, and deployments.",
+      "Deployed containerized applications using Docker, managing infrastructure across AWS, GCP , Heroku, and Railway.",
+      "Implemented automated backup pipelines for SQL and NoSQL databases to ensure data reliability and recovery.",
+      "Built continuous integration workflows for frontend projects (React, Vue, Nuxt, Angular) to validate commits and enforce best practices.",
+      "Integrated AI-assisted tools into pull request workflows to identify critical issues and generate automated technical reports.",
+      "Successfully delivered and maintained multiple applications in production, including deployments to mobile app stores."
     ],
     techBadges: ['React Native', 'NestJS', 'GraphQL', 'AWS', 'Angular', 'PostgreSQL', 'Redis', 'GraphQL', 'Offline Modules', 'Docker', 'PouchDB', 'CouchDB', 'Firestore']
+  },
+  {
+    id: 'tangram',
+    role: 'Mobile Developer Lead',
+    company: 'Tangram Consulting',
+    period: 'Sep 2024 - Jan 2026',
+    description: [
+      "Developed and maintained cross-platform mobile applications using React Native (CLI and Expo) for iOS and Android.",
+      "Provided technical leadership across multiple teams, unblocking developers, designing architectural solutions for new applications, and resolving high-priority production issues to ensure stability and timely delivery.",
+      "Implemented complex UI flows, online payment systems, external API integrations, and third-party SDKs.",
+      "Built and maintained CI/CD pipelines using GitHub Actions to enforce strict linting rules, automated testing, and continuous code validation for React Native and Expo projects.",
+      "Automated mobile build and release processes using Expo EAS, enabling deployments to the Apple App Store and Google Play Store.",
+      "Collaborated closely with UI/UX designers, backend engineers, clients, and stakeholders to align technical solutions with business requirements.",
+      "Supported production applications, managed store updates, and optimized development workflows to accelerate delivery across multiple projects.",
+    ],
+    techBadges: ['React Native', 'Expo', 'iOS', 'Android', 'GCP', 'Automated Testing', 'TypeScript']
   },
   {
     id: 'racquets',
@@ -33,9 +41,11 @@ export const experiences: Experience[] = [
     company: 'Racquets AppSuite LLC',
     period: 'Jan 2024 - Dec 2025',
     description: [
-      'Directed the development and maintenance of React Native applications, covering everything from project planning to core interface design.',
-      'Implemented online payment systems and localization support for 11 languages.',
-      'Built robust backends with NodeJS and Firestore, creating scalable architectures based on Google services.'
+      "Led the development and maintenance of a React Native mobile application, covering project planning, architecture definition, and core interface design.",
+      "Implemented critical features including online payment systems and multi-language support for 11 languages.",
+      "Built and maintained RESTful APIs using Node.js and Express, integrating Google Cloud Platform services such as Firestore, Authentication, Google Maps, and Analytics.",
+      "Designed scalable application architecture to support production usage and future feature growth.",
+      "Automated CI/CD pipelines using GitHub Actions to run tests, validate code quality, and deploy backend services to productionenvironments.",
     ],
     techBadges: ['React Native', 'NodeJS', 'Firestore', 'Localization', 'GCP', 'Online payments']
   },
@@ -45,9 +55,11 @@ export const experiences: Experience[] = [
     company: 'tuGerente',
     period: 'Aug 2022 - Feb 2023',
     description: [
-      'Led the mobile team, overseeing the development and deployment of iOS and Android applications.',
-      'Collaborated closely on backend design strategy and maintained development standards for timely delivery.',
-      'Managed hybrid infrastructure using Amazon S3/EC2 for storage and compute, along with GCP Firestore.'
+      "Led the mobile development team, overseeing end-to-end development and deployment of iOS and Android applications.",
+      "Ensured quality and timely delivery by enforcing development standards and collaborating on backend architecture and strategy.",
+      "Managed cloud services using GCP for authentication, analytics, and Firestore-based data persistence.",
+      "Utilized AWS services (S3, EC2) for file storage and compute resources.",
+      "Contributed technical insights to optimize development processes and improve team efficiency.",
     ],
     techBadges: ['Mobile Leadership', 'React Native', 'AWS', 'Project Strategy', 'Android', 'iOS', 'Offline Modules', 'Firestore', 'NodeJS', 'Docker', 'PostgreSQL', 'Redis', 'PouchDB', 'CouchDB']
   },
@@ -57,9 +69,9 @@ export const experiences: Experience[] = [
     company: 'Canned Head',
     period: 'Nov 2021 - Feb 2022',
     description: [
-      'Specialized in React frontend development, translating UI designs into pixel-perfect and responsive web apps.',
-      'Seamlessly integrated interface components with backend APIs through cross-functional collaboration.',
-      'Focused on clear technical documentation to improve long-term code maintainability and reference.'
+      "Specialized in React frontend development, translating UI/UX designs into responsive, pixel-perfect web applications.",
+      "Collaborated closely with backend teams to integrate frontend components with REST APIs.",
+      "Produced clear and maintainable code documentation to support long-term scalability and team collaboration.",
     ],
     techBadges: ['React', 'UI/UX', 'Responsive Design', 'API Integration', 'Documentation']
   }
