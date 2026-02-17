@@ -76,7 +76,7 @@
                           :key="idx" 
                           :src="getAssetPath(img)" 
                           @click="openGalleryModal(idx)"
-                          class="rounded-lg object-contain w-full h-48 border border-white/5 hover:border-brand/50 transition-colors cursor-pointer" 
+                          class="rounded-lg object-cover object-top w-full h-48 border border-white/5 hover:border-brand/50 transition-colors cursor-pointer" 
                         />
                       </div>
                     </div>
