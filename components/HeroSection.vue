@@ -56,6 +56,7 @@ const technologies = [
   { name: 'Expo', icon: 'logos:expo-icon', color: '' },
   { name: 'React', icon: 'logos:react', color: '' },
   { name: 'Next.js', icon: 'logos:nextjs-icon', color: '' },
+  { name: 'Angular', icon: 'logos:angular-icon', color: '' },
   { name: 'Vue', icon: 'logos:vue', color: '' },
   { name: 'NestJS', icon: 'logos:nestjs', color: '' },
   { name: 'Python', icon: 'logos:python', color: '' },
