@@ -59,7 +59,12 @@
           </a>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- NPM Packages Grid / Skeleton -->
+        <div v-if="packagesStatus === 'pending' && (!npmPackages || npmPackages.length === 0)" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <PackageSkeleton v-for="i in 3" :key="i" />
+        </div>
+
+        <div v-else class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <PackageCard 
             v-for="pkg in npmPackages" 
             :key="pkg.name" 
@@ -93,7 +98,12 @@
           </a>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Dev.to Articles Grid / Skeleton -->
+        <div v-if="articlesStatus === 'pending' && (!articles || articles.length === 0)" class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <ArticleSkeleton v-for="i in 2" :key="i" />
+        </div>
+
+        <div v-else class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <ArticleCard 
             v-for="article in articles" 
             :key="article.id" 
@@ -121,13 +131,16 @@
 
 <script setup lang="ts">
 import { projects } from '../data/projects';
-import { npmPackages } from '../data/packages';
-import { articles } from '../data/articles';
 import { EXTERNAL_LINKS } from '../constants';
 import { usePortfolioStore } from '../stores/portfolio';
+import { usePackages } from '../composables/usePackages';
+import { useArticles } from '../composables/useArticles';
 import type { Project } from '../types';
 
 const store = usePortfolioStore();
+
+const { data: npmPackages, status: packagesStatus } = usePackages();
+const { data: articles, status: articlesStatus } = useArticles();
 
 const openProject = (project: Project) => {
   store.selectProject(project);
