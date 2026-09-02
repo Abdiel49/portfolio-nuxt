@@ -2,6 +2,20 @@
   <div>
     <HeroSection />
 
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-dark-surface/30 relative">
+      <div class="container mx-auto px-6">
+        <div class="mb-16">
+          <h2 class="text-4xl font-bold mb-4 text-white">Work Experience</h2>
+          <div class="h-1 w-20 bg-brand rounded"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <ExperienceTimeline />
+        </div>
+      </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="py-24 bg-dark-bg relative">
       <div class="container mx-auto px-6">
@@ -17,29 +31,6 @@
             :project="project"
             @click="openProject(project)"
           />
-        </div>
-
-        <!-- <div class="flex flex-col items-center justify-center py-12 text-center">
-          <div class="p-6 rounded-lg bg-dark-surface/50 border border-dark-border max-w-lg">
-            <h3 class="text-2xl font-bold text-white mb-3">🚧 Under Construction</h3>
-            <p class="text-dark-muted">
-              This section is currently being built. Check back soon for updates on my latest projects!
-            </p>
-          </div>
-        </div> -->
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-24 bg-dark-surface/30 relative">
-      <div class="container mx-auto px-6">
-        <div class="mb-16">
-          <h2 class="text-4xl font-bold mb-4 text-white">Work Experience</h2>
-          <div class="h-1 w-20 bg-brand rounded"></div>
-        </div>
-
-        <div class="max-w-3xl mx-auto">
-          <ExperienceTimeline />
         </div>
       </div>
     </section>
