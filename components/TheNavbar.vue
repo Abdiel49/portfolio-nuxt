@@ -79,6 +79,8 @@
     { name: 'Home', href: '#home' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Packages', href: '#packages' },
+    { name: 'Articles', href: '#articles' },
     { name: 'Contact', href: '#contact' }
   ];
 </script>

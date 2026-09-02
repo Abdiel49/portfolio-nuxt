@@ -25,3 +25,31 @@ export interface Experience {
   description: string[];
   techBadges: string[];
 }
+
+export interface Article {
+  id: string | number;
+  title: string;
+  description: string;
+  url: string;
+  readablePublishDate: string;
+  publishedAt: string;
+  readingTimeMinutes?: number;
+  tags: string[];
+  socialImage?: string;
+  reactionsCount?: number;
+  commentsCount?: number;
+}
+
+export interface NpmPackage {
+  name: string;
+  version: string;
+  description: string;
+  keywords: string[];
+  npmUrl: string;
+  repoUrl?: string;
+  license?: string;
+  downloads?: {
+    weekly?: number;
+    monthly?: number;
+  };
+}

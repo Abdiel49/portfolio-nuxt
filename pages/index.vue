@@ -35,8 +35,76 @@
       </div>
     </section>
 
+    <!-- NPM Packages Section -->
+    <section id="packages" class="py-24 bg-dark-surface/30 relative">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+          <div>
+            <h2 class="text-4xl font-bold mb-4 text-white">Open Source & NPM Packages</h2>
+            <div class="h-1 w-20 bg-brand rounded mb-3"></div>
+            <p class="text-dark-muted text-base max-w-xl">
+              Developer tools, utilities, and specification suites published on the npm registry.
+            </p>
+          </div>
+
+          <a 
+            :href="EXTERNAL_LINKS.NPM" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-5 py-2.5 bg-dark-surface hover:bg-brand/10 text-white hover:text-brand border border-white/10 hover:border-brand/40 rounded-lg text-sm font-semibold transition-all self-start md:self-auto"
+          >
+            <Icon name="mdi:npm" class="w-5 h-5 text-red-400" />
+            <span>View npm Profile</span>
+            <Icon name="heroicons:arrow-top-right-on-square" class="w-4 h-4" />
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <PackageCard 
+            v-for="pkg in npmPackages" 
+            :key="pkg.name" 
+            :pkg="pkg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Dev.to Articles Section -->
+    <section id="articles" class="py-24 bg-dark-bg relative">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+          <div>
+            <h2 class="text-4xl font-bold mb-4 text-white">Articles & Publications</h2>
+            <div class="h-1 w-20 bg-brand rounded mb-3"></div>
+            <p class="text-dark-muted text-base max-w-xl">
+              Technical guides, deep dives, and architecture patterns shared on Dev.to.
+            </p>
+          </div>
+
+          <a 
+            :href="EXTERNAL_LINKS.DEVTO" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-5 py-2.5 bg-dark-surface hover:bg-brand/10 text-white hover:text-brand border border-white/10 hover:border-brand/40 rounded-lg text-sm font-semibold transition-all self-start md:self-auto"
+          >
+            <Icon name="mdi:dev-to" class="w-5 h-5" />
+            <span>View on Dev.to</span>
+            <Icon name="heroicons:arrow-top-right-on-square" class="w-4 h-4" />
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <ArticleCard 
+            v-for="article in articles" 
+            :key="article.id" 
+            :article="article"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-dark-bg">
+    <section id="contact" class="py-24 bg-dark-surface/30">
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">Ready to start your next project?</h2>
         <p class="text-dark-muted text-lg max-w-2xl mx-auto mb-12">
@@ -53,6 +121,9 @@
 
 <script setup lang="ts">
 import { projects } from '../data/projects';
+import { npmPackages } from '../data/packages';
+import { articles } from '../data/articles';
+import { EXTERNAL_LINKS } from '../constants';
 import { usePortfolioStore } from '../stores/portfolio';
 import type { Project } from '../types';
 
